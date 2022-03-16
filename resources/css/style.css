@@ -1,0 +1,60 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Header styles */
+header {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    margin-left: 24px;
+} 
+
+.logo span {
+    color: #333639;
+}
+
+.logo p {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #858B93;
+}
+
+nav {
+    margin-right: 24px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4d4949;
+    transition: color 300ms ease-in;
+}
+
+nav ul li a:hover {
+    color: #8d8d8d;
+}
