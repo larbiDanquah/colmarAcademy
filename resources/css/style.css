@@ -123,7 +123,6 @@ img {
 
 .left .image-container {
     margin-bottom: 32px;
-    border: solid 1px tan;
     height: 60%;
     background-image: url('/resources/images/information-main.jpg');
     background-repeat: no-repeat;
@@ -310,4 +309,35 @@ p.person {
     color: #4d4949;
 }
 
+/* Thesis section */
+#thesis h3 {
+    text-align: center;
+    margin: 32px 0;
+}
 
+.thesis-container {
+    margin: 32px 0;
+    padding-left: 24px;
+    display: flex;
+}
+
+.thesis-container video {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.thesis-container .guest-lecturer .item-image {
+    background-image: url('/resources/images/thesis-fisma.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thesis-container .campus .item-image {
+    background-image: url('/resources/images/thesis-now-and-then.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thesis-container h4 {
+    margin-bottom: 8px;
+}
