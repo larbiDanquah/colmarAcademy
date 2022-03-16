@@ -9,6 +9,57 @@ body {
 }
 
 /* Header styles */
+@media only screen and (min-width: 376px) {
+    header.mobile {
+        display: none;
+    }
+
+    #hero {
+        padding: 32px 0 32px 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    #hero .image-container {
+        width: 60%;
+        height: 400px;
+        background-image: url('/resources/images/banner.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 24px;
+    }
+
+    #main-info {
+        padding-left: 24px;
+    }
+
+    .hero-info {
+        max-width: 30%;
+    }
+
+    .right {
+        max-width: 40%;
+    }
+
+    .right .item-image {
+        width: 35%;
+        margin: 16px 0 16px 16px;
+    }
+
+    #learning {
+        padding: 32px 72px;
+    }
+
+    #learning.mobile {
+        display: none;
+    }
+
+    #thesis.mobile {
+        display: none;
+    }
+}
+
 header {
     height: 64px;
     width: 100%;
@@ -65,19 +116,12 @@ nav ul li a:hover {
 
 /* Hero section */
 #hero {
-    padding: 32px 0 32px 24px;
-    display: flex;
-    align-items: center;
     background-color: #F8F6FF;
 }
 
 img {
     max-width: 60%;
     margin-right: 24px;
-}
-
-.hero-info {
-    max-width: 30%;
 }
 
 .hero-info h1 {
@@ -112,7 +156,6 @@ img {
 /* Main info section */
 #main-info {
     margin: 32px 0;
-    padding-left: 24px;
     display: flex;
 }
 
@@ -146,7 +189,6 @@ p.person {
 }
 
 .right {
-    max-width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -161,9 +203,7 @@ p.person {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 35%;
     height: auto;
-    margin: 16px 0 16px 16px;
 }
 
 .campus .item-image {
@@ -171,9 +211,7 @@ p.person {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 35%;
     height: auto;
-    margin: 16px 0 16px 16px;
 }
 
 .guest-lecturer {
@@ -185,9 +223,7 @@ p.person {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 35%;
     height: auto;
-    margin: 16px 0 16px 16px;
 }
 
 .right-info {
@@ -215,7 +251,6 @@ p.person {
 
 /* Learning section styles */
 #learning {
-    padding: 32px 72px;
     background-color: aliceblue;
 }
 
@@ -350,4 +385,109 @@ footer {
     justify-content: space-between;
     color: #868383;
     font-size: 14px;
+}
+
+
+/* Mobile design */
+@media only screen and (max-width: 375px) {
+    header.desktop {
+        display: none;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #hero .image-container {
+        width: 100%;
+        height: 300px;
+        background-image: url('/resources/images/banner.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 32px;
+    }
+
+    .hero-info {
+        padding: 0 16px;
+    }
+
+    #main-info {
+        flex-direction: column;
+    }
+
+    #main-info .left {
+        display: none;
+    }
+
+    .orientation, .campus, .guest-lecturer {
+        flex-direction: column;
+    }
+
+    .right .item-image {
+        height: 200px;
+    }
+
+    #main-info {
+        padding: 16px;
+    }
+
+    .orientation .item-image {
+        background-image: url('/resources/images/information-orientation-mobile.jpg');
+    }
+    
+    .campus .item-image {
+        background-image: url('/resources/images/information-campus-mobile.jpg');
+    }
+
+    .guest-lecturer .item-image {
+        background-image: url('/resources/images/information-guest-lecture-mobile.jpg');
+    }
+
+    #learning.desktop {
+        display: none;
+    }
+
+    #learning.mobile {
+        padding: 32px 16px;
+    }
+
+    #learning.mobile .course-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #learning.mobile .course-list {
+        margin-top: 16px;
+    }
+
+    #learning.mobile .course-list .course-item {
+        margin-bottom: 8px;
+        background-color: #e4e4e4;
+        width: 100%;
+        padding: 16px;
+    }
+
+    #learning.mobile .course-list .course-item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #thesis.desktop {
+        display: none;
+    }
+
+    #thesis.mobile video {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 24px;
+    }
+
+    footer nav {
+        display: none;
+    }
 }

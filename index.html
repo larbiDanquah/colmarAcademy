@@ -34,7 +34,7 @@
     </header>
 
     <!-- Mobile Header -->
-    <!-- <header class="mobile">
+    <header class="mobile">
         <div class="logo">
             <img src="./resources/images/ic-logo.svg" alt="Logo">
         </div>
@@ -46,10 +46,11 @@
                 <li><a href="#"><img src="resources/images/ic-login.svg" alt=""></a></li>
             </ul>
         </nav>
-    </header> -->
+    </header>
 
     <section id="hero">
-        <img src="./resources/images/banner.jpg" alt="">
+        <div class="image-container">
+        </div>
         <div class="hero-info">
             <h1>Learn something new everyday</h1>
             <p>Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -101,8 +102,8 @@
         </div>
     </section>
 
-    <!-- Learning section -->
-    <section id="learning">
+    <!-- Learning section Desktop -->
+    <section id="learning" class="desktop">
         <h3>Start learning</h3>
 
         <div class="courses-grid">
@@ -172,7 +173,33 @@
         </div>
     </section>
 
-    <section id="thesis">
+    <section id="learning" class="mobile">
+        <h3>Start learning</h3>
+
+        <div class="course-list">
+            <div class="course-item">
+                <h4>Software engineering</h4>
+            </div>
+            <div class="course-item">
+                <h4>Computer art</h4>
+            </div>
+            <div class="course-item">
+                <h4>Design</h4>
+            </div>
+            <div class="course-item">
+                <h4>Data</h4>
+            </div>
+            <div class="course-item">
+                <h4>Business</h4>
+            </div>
+            <div class="course-item">
+                <h4>Marketing</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thesis exhibit section -->
+    <section id="thesis" class="desktop">
         <h3>Thesis exhibit</h3>
 
         <div class="thesis-container">
@@ -204,6 +231,14 @@
             </div>
 
         </div>
+    </section>
+
+    <section id="thesis" class="mobile">
+        <h3>Thesis exhibit</h3>
+
+        <video src="./resources/videos/thesis.mp4" controls>
+            Video not supported
+        </video>
     </section>
 
     <footer>
