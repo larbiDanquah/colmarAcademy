@@ -121,12 +121,14 @@ img {
     margin-right: 24px;
 }
 
-.image-container {
+.left .image-container {
     margin-bottom: 32px;
-}
-
-.image-container img {
-    width: 100%;
+    border: solid 1px tan;
+    height: 60%;
+    background-image: url('/resources/images/information-main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .left h3 {
@@ -205,3 +207,107 @@ p.person {
     color: #4d4949cc;
     margin-bottom: 8px;
 }
+
+.right-info a {
+    font-size: 12px;
+    color: #8976ff;
+    text-decoration: none;
+}
+
+/* Learning section styles */
+#learning {
+    padding: 32px 72px;
+    background-color: aliceblue;
+}
+
+#learning h3 {
+    text-align: center;
+    /* margin-bottom: 32px; */
+}
+
+.courses-grid {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.course {
+    background-color: white;
+    width: 220px;
+    margin: 32px;
+}
+
+.first-row, .second-row {
+    display: flex;
+}
+
+.course .image-container {
+    background-color: aqua;
+    height: 150px;
+}
+
+.item-1 .image-container {
+    background-image: url('/resources/images/course-software.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-2 .image-container {
+    background-image: url('/resources/images/course-computer-art.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-3 .image-container {
+    background-image: url('/resources/images/course-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4 .image-container {
+    background-image: url('/resources/images/course-data.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-5 .image-container {
+    background-image: url('/resources/images/course-business.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-6 .image-container {
+    background-image: url('/resources/images/course-marketing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-info {
+    padding: 16px 16px 24px 16px;
+}
+
+.course-info h4 {
+    margin-bottom: 8px;
+}
+
+.course-info p.heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4d4949;
+    margin-bottom: 8px;
+}
+
+
+.course-info p.course-list {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #4d4949;
+}
+
+
