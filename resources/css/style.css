@@ -341,3 +341,13 @@ p.person {
 .thesis-container h4 {
     margin-bottom: 8px;
 }
+
+/* Footer styles */
+footer {
+    border-top: solid 1px #e6e6e6;
+    padding: 16px 24px 32px 24px;
+    display: flex;
+    justify-content: space-between;
+    color: #868383;
+    font-size: 14px;
+}
